@@ -19,4 +19,22 @@
 
 body {
   padding-top:45px;
+  font-size:18px;
+  font-family:"Monorails";
+  line-height: 1.1em;
+}
+
+header, footer {
+  background: #333;
+  color: #fff;
+    height:65px;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+
+footer {
+  padding-top : 20px;
 }
