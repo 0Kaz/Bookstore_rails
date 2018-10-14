@@ -1,2 +1,57 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<div id="books-index">
+  <div class="row">
+    <div class="col-md-3 col-sm-3">
+      <h3>Hyperion by Dan simmons</h3>
+      <%= image_tag('Value-of-Everything.jpg') %>
+      <%= link_to 'Read More', book_path(1), class: "btn btn-primary" %>
+    </div>
+
+    <div class="col-md-3 col-sm-3">
+      <h3>Art-of-Gathering</h3>
+      <%= image_tag('Art-of-Gathering.jpg') %>
+      <%= link_to 'Read More', book_path(1), class: "btn btn-primary" %>
+    </div>
+
+
+    <div class="col-md-3 col-sm-3">
+      <h3>Adam Smith</h3>
+      <%= image_tag('adam-smith.jpg') %>
+      <%= link_to 'Read More', book_path(1), class: "btn btn-primary" %>
+    </div>
+
+    <div class="col-md-3 col-sm-3">
+      <h3>Biological Mind</h3>
+      <%= image_tag('Biological-Mind.jpg') %>
+      <%= link_to 'Read More', book_path(1), class: "btn btn-primary" %>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-3 col-sm-3">
+      <h3>My morning routine</h3>
+      <%= image_tag('My-Morning-Routine-e1528872066966.jpg') %>
+      <%= link_to 'Read More', book_path(1), class: "btn btn-primary" %>
+    </div>
+
+    <div class="col-md-3 col-sm-3">
+      <h3>Wehn Einstein Walked</h3>
+      <%= image_tag('When-Einstein-Walked.jpg') %>
+      <%= link_to 'Read More', book_path(1), class: "btn btn-primary" %>
+    </div>
+
+
+    <div class="col-md-3 col-sm-3">
+      <h3>Value of Everything</h3>
+      <%= image_tag('Value-of-Everything.jpg') %>
+      <%= link_to 'Read More', book_path(1), class: "btn btn-primary" %>
+    </div>
+
+
+    <div class="col-md-3 col-sm-3">
+      <h3>Hyperion by Dan simmons</h3>
+      <%= image_tag('hyperion.jpeg') %>
+      <%= link_to 'Read More', book_path(1), class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

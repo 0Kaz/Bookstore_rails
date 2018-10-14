@@ -1,2 +1,27 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<div id="books-show">
+  <h2>Hyperion by Dan Simmons</h2>
+  <div class="books-show-left">
+    <%= image_tag("hyperion.jpeg") %>
+  </div>
+
+  <div class="books-show-right">
+    <h3>Book info : </h3>
+    <ul>
+      <li><strong>Category: </strong>Scifi</li>
+      <li><strong>Author: </strong>Dan Simmons</li>
+      <li><strong>Publisher: </strong>Lambda</li>
+      <li><strong>Year: </strong>1989</li>
+      <li><strong>ISBN: </strong>2134564894513</li>
+      <li><strong>Pages: </strong>280</li>
+    </ul>
+
+    <%= link_to "Buy for 3.99 $ ", "https://www.ebay.com/p/Hyperion-Cantos-The-Hyperion-1-by-Dan-Simmons-1990-Paperback/957061?iid=142080699011" , class: "btn btn-success", target: "_blank" %>
+  </div>
+
+  <div class="clearfix">
+    <h4>Excerpt</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium dui ligula, eu sollicitudin odio hendrerit id. Sed et ullamcorper dui, sed egestas lectus. Donec porta ipsum metus, sit amet blandit nisl fermentum vitae. Integer dictum eleifend felis a rutrum. Integer blandit lobortis placerat. Integer euismod ex non leo viverra consequat. Nullam placerat arcu et semper rhoncus. Fusce venenatis nulla vitae lacus posuere, sit amet elementum turpis vestibulum. Fusce et lectus nibh. Duis quis justo ac leo molestie commodo eu nec nisl. Morbi ultricies eros eros, nec molestie nulla pellentesque non. Suspendisse accumsan luctus consequat. Cras quis velit urna. Cras et neque sed tellus euismod fermentum a vitae lorem. Maecenas tincidunt dapibus rutrum. Donec id eros ligula.
+
+    Quisque non velit lobortis, ullamcorper dolor non, molestie nisi. Fusce ultrices varius eros, eget fermentum urna. Sed dapibus porta augue et vehicula. Duis eleifend dapibus diam ac feugiat. Mauris iaculis interdum pulvinar. Donec maximus turpis lectus, ut porta quam finibus ac. Curabitur sagittis nunc nec quam blandit consectetur. Vivamus non diam elit. In mattis dictum tortor eu feugiat. </p>
+  </div>
+</div>

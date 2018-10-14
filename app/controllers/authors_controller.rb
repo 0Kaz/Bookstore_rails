@@ -1,5 +1,11 @@
 class AuthorsController < ApplicationController
+  def index
+
+  end
+
   def new
+    @page_title = "Add New Author"
+    @author = Author.new
   end
 
   def create
@@ -14,9 +20,8 @@ class AuthorsController < ApplicationController
   def destroy
   end
 
-  def index
-  end
 
   def show
   end
+
 end

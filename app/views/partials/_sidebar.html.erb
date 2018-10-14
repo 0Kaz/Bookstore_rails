@@ -1,8 +1,19 @@
-<div class="well">
-  <h3>You can contribute to the BookstoreForNeedies</h3>
-  <p>Contac us :</p>
-  <ul>
-    <li> Casablanca, Morocco</li>
-    <li> Omar K. </li>
-  </ul>
-</div>
+
+<% if params[:controller] == "about" %>
+  <div class="well">
+    <h3>You can contribute to the BookstoreForNeedies</h3>
+    <p>Contac us :</p>
+    <ul>
+      <li> Casablanca, Morocco</li>
+      <li> Omar K. </li>
+    </ul>
+  </div>
+<% end %>
+
+<% if params[:controller] == "books" && params[:action] =="index" || params[:action] == "show" %>
+  <div class="list-group">
+    <a href="#" class="list-group-item">Scifi</a>
+    <a href="#" class="list-group-item">Self Help</a>
+    <a href="#" class="list-group-item">Entrepeneurship</a>
+  </div>
+<% end %>
