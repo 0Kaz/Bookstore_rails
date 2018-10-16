@@ -10,12 +10,17 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require font-awesome
  *= require_tree .
  *= require_self
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+.center_page {
+  height:80vh;
+}
 
 body {
   padding-top:45px;
@@ -27,16 +32,19 @@ body {
 header, footer {
   background: #333;
   color: #fff;
-    height:65px;
-}
-
-header {
-  margin-bottom: 50px;
 }
 
 
-footer {
-  padding-top : 20px;
+
+
+.footer {
+  position: absolute;
+  width:100%;
+  bottom:0;
+  margin-top: 0px; /* negative value of footer height */
+  height: 60px;
+  clear:both;
+  padding-top:20px;
 }
 
 

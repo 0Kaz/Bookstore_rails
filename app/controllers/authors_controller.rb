@@ -1,6 +1,7 @@
 class AuthorsController < ApplicationController
+  before_action :set_author_id, only: [:show, :edit, :update, :destroy]
   def index
-
+    @authors = Author.all
   end
 
   def new
@@ -20,12 +21,19 @@ class AuthorsController < ApplicationController
   end
 
   def update
+    @author.update(set_author_params)
+    flash[:notice] = "Author updated"
+    redirect_to authors_path
   end
 
   def edit
+    @page_title = "Edit Author"
   end
 
   def destroy
+    @author.destroy
+    flash[:notice] = "Author removed"
+    redirect_to authors_path
   end
 
 
@@ -39,5 +47,7 @@ class AuthorsController < ApplicationController
     params.require(:author).permit(:first_name, :last_name)
   end
 
-
+  def set_author_id
+    @author = Author.find(params[:id])
+  end
 end
